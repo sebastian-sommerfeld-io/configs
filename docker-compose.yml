@@ -1,0 +1,34 @@
+---
+## This Docker Compose file handles linting the project files to ensure they adhere to coding
+## standards.
+##
+## [source, bash]
+## ....
+## docker compose up
+## ....
+
+services:
+  lint-yaml:
+    container_name: ${COMPOSE_PROJECT_NAME}-lint-yaml
+    image: cytopia/yamllint:latest
+    volumes:
+      - .:/workspaces/configs
+    working_dir: /workspaces/configs
+    command: .
+    tty: true
+
+  lint-filenames:
+    container_name: ${COMPOSE_PROJECT_NAME}-lint-filenames
+    image: lslintorg/ls-lint:1.11.2
+    volumes:
+      - .:/workspaces/configs
+    working_dir: /workspaces/configs
+
+  lint-folders:
+    container_name: ${COMPOSE_PROJECT_NAME}-lint-folders
+    image: sommerfeldio/folderslint:latest
+    volumes:
+      - .:/workspaces/configs
+    working_dir: /workspaces/configs
+    command: .
+    tty: true

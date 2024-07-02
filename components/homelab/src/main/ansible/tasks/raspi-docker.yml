@@ -1,6 +1,6 @@
 ---
-# @file ubuntu-install-docker.yml
-# @brief Install Docker with all dependencies.
+# @file raspi-docker.yml
+# @brief Install Docker with all dependencies on a Raspberry Pi node.
 #
 # @description The task installs Docker with all dependencies. It also ensures that
 # all possibly existing legacy Docker packages are purged first. It also adds the
@@ -10,10 +10,12 @@
 - name: Docker Setup -> Purge deprecated docker installations
   ansible.builtin.apt:
     pkg:
-      - docker-compose
       - docker
       - docker-engine
       - docker.io
+      - docker-doc
+      - docker-compose
+      - podman-docker
       - containerd
       - runc
     state: absent
@@ -21,7 +23,7 @@
 
 - name: Docker Setup -> Add GPG apt key
   ansible.builtin.apt_key:
-    url: https://download.docker.com/linux/ubuntu/gpg
+    url: https://download.docker.com/linux/raspbian/gpg
     state: present
     keyring: /etc/apt/trusted.gpg.d/docker.gpg
 

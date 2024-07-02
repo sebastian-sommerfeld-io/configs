@@ -16,7 +16,7 @@
 services:
 
   node_exporter:
-    image: prom/node-exporter:v1.7.0
+    image: prom/node-exporter:v1.8.1
     container_name: node_exporter
     restart: always
     command:
@@ -28,7 +28,7 @@ services:
       - /etc/timezone:/etc/timezone:ro
 
   cadvisor:
-    image: gcr.io/cadvisor/cadvisor:v0.47.2
+    image: gcr.io/cadvisor/cadvisor:v0.49.1
     container_name: cadvisor
     restart: always
     ports:

@@ -1,5 +1,5 @@
 ---
-# @file ubuntu-install-docker-wrapper-scripts.yml
+# @file ubuntu-docker-wrapper-scripts.yml
 # @brief Install Docker wrapper scripts.
 #
 # @description The task installs all Docker wrapper scripts. These scripts act

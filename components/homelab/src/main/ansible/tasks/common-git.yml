@@ -1,5 +1,5 @@
 ---
-# @file common-config-git.yml
+# @file common-git.yml
 # @brief Configure Git.
 #
 # @description The task configures git with the ``.gitconfig`` from this repo.

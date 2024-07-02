@@ -1,5 +1,5 @@
 == Start Docker Compose Stacks
-Use `xref:AUTO-GENERATED:bash-docs/components/homelab/src/main/docker-stacks-cli-sh.adoc[components/homelab/src/main/docker-stacks-cli.sh]` to start Docker Compose services.
+Use `xref:AUTO-GENERATED:bash-docs/components/homelab/docker-stacks-cli-sh.adoc[components/homelab/docker-stacks-cli.sh]` to start Docker Compose services.
 
 IMPORTANT: Make sure you only start the Portainer Stack! All other Stacks are managed by Portainer. See xref:AUTO-GENERATED:components/homelab/src/main/docker-stacks/portainer/docker-compose-yml.adoc[components/homelab/src/main/docker-stacks/portainer/docker-compose.yml] for details.
 

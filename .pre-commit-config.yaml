@@ -29,12 +29,24 @@ repos:
       - id: check-json
       - id: check-merge-conflict
       - id: detect-private-key
-  - repo: https://github.com/adrienverge/yamllint.git
-    rev: v1.32.0
+  - repo: local
     hooks:
-      - id: yamllint
-        entry: yamllint
-        types: [file, yaml]
+      - id: lint-yaml
+        name: lint-yaml
+        language: script
+        entry: /bin/bash -c 'docker compose up lint-yaml --exit-code-from lint-yaml'
+  - repo: local
+    hooks:
+      - id: lint-folders
+        name: lint-folders
+        language: script
+        entry: /bin/bash -c 'docker compose up lint-folders --exit-code-from lint-folders'
+  - repo: local
+    hooks:
+      - id: lint-filenames
+        name: lint-filenames
+        language: script
+        entry: /bin/bash -c 'docker compose up lint-filenames --exit-code-from lint-filenames'
   - repo: local
     hooks:
       - id: ansible-lint

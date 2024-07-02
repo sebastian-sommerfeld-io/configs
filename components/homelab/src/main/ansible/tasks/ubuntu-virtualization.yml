@@ -1,5 +1,5 @@
 ---
-# @file ubuntu-install-virtualization.yml
+# @file ubuntu-virtualization.yml
 # @brief Install Virtualbox and Vagrant with all dependencies.
 #
 # @description The task installs Virtualbox and Vagrant with some plugins. It also

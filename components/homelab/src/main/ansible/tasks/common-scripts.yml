@@ -1,5 +1,5 @@
 ---
-# @file common-install-scripts.yml
+# @file common-scripts.yml
 # @brief Install utility scripts.
 #
 # @description The task installs utility scripts. These scripts act

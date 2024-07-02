@@ -3,4 +3,6 @@
 * xref:homelab/kobol/index.adoc[]
 * xref:homelab/pihole-fritz-box/index.adoc[]
 * xref:tweaks.adoc[]
+* Architecture Decision Records
+** xref:architecture-decisions/2024-07-02-minikube-vs-portainer.adoc[]
 * xref:license.adoc[]

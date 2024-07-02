@@ -1,5 +1,5 @@
 * xref:AUTO-GENERATED:components/homelab/src/test/lint-ansible-sh.adoc[components/homelab/src/test/lint-ansible.sh]
-* xref:AUTO-GENERATED:components/homelab/src/main/bootstrap/install-basics-sh.adoc[components/homelab/src/main/bootstrap/install-basics.sh]
+* xref:AUTO-GENERATED:components/homelab/src/main/bootstrap/basics-sh.adoc[components/homelab/src/main/bootstrap/basics.sh]
 * xref:AUTO-GENERATED:components/homelab/src/main/bootstrap/ssh-server-sh.adoc[components/homelab/src/main/bootstrap/ssh-server.sh]
 * xref:AUTO-GENERATED:components/homelab/src/main/ansible/assets/scripts/docker/wrappers/groovy-sh.adoc[components/homelab/src/main/ansible/assets/scripts/docker/wrappers/groovy.sh]
 * xref:AUTO-GENERATED:components/homelab/src/main/ansible/assets/scripts/docker/wrappers/hadolint-sh.adoc[components/homelab/src/main/ansible/assets/scripts/docker/wrappers/hadolint.sh]
@@ -12,5 +12,5 @@
 * xref:AUTO-GENERATED:components/homelab/src/main/ansible/assets/scripts/system-info-sh.adoc[components/homelab/src/main/ansible/assets/scripts/system-info.sh]
 * xref:AUTO-GENERATED:components/homelab/src/main/ansible/assets/scripts/cron/cleanup-filesystem-sh.adoc[components/homelab/src/main/ansible/assets/scripts/cron/cleanup-filesystem.sh]
 * xref:AUTO-GENERATED:components/homelab/src/main/conky/run-sh.adoc[components/homelab/src/main/conky/run.sh]
-* xref:AUTO-GENERATED:components/homelab/src/main/docker-stacks-cli-sh.adoc[components/homelab/src/main/docker-stacks-cli.sh]
+* xref:AUTO-GENERATED:components/homelab/docker-stacks-cli-sh.adoc[components/homelab/docker-stacks-cli.sh]
 * xref:AUTO-GENERATED:components/homelab/ansible-cli-sh.adoc[components/homelab/ansible-cli.sh]

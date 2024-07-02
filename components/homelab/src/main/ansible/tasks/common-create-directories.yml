@@ -1,5 +1,5 @@
 ---
-# @file common-config-create-directories.yml
+# @file common-create-directories.yml
 # @brief Setup directory tree.
 #
 # @description  The task sets up the directory tree and ensures needed all

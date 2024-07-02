@@ -1,5 +1,5 @@
 ---
-# @file ubuntu-install-sublime.yml
+# @file ubuntu-sublime.yml
 # @brief Install Sublime.
 #
 # @description The task installs the Sublime text editor.

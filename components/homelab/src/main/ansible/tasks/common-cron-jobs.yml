@@ -1,5 +1,5 @@
 ---
-# @file common-config-cron-jobs.yml
+# @file common-cron-jobs.yml
 # @brief Configure Cron jobs.
 #
 # @description The task configures Cron jobs for the ``{{ ansible_user }}`` (which

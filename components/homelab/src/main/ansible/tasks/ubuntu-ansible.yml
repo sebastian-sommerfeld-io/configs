@@ -1,5 +1,5 @@
 ---
-# @file ubuntu-install-ansible.yml
+# @file ubuntu-ansible.yml
 # @brief Install Ansible.
 #
 # @description The task installs Ansible.

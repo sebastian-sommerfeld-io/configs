@@ -33,7 +33,7 @@
 services:
 
   portainer:
-    image: portainer/portainer-ce:2.19.4-alpine
+    image: portainer/portainer-ce:2.20.3-alpine
     container_name: portainer
     command: --host unix:///var/run/docker.sock --admin-password-file /tmp/portainer_passwords
     restart: always
@@ -50,16 +50,6 @@ services:
       timeout: 10s
       retries: 6
       start_period: 10s
-
-  newman:
-    image: postman/newman:6.0.0-alpine
-    container_name: newman
-    depends_on:
-      portainer:
-        condition: service_healthy
-    volumes:
-      - ./assets/collections:/etc/newman
-    command: run portainer-postman-collection.json --env-var "BASE_URL=http://portainer:9000/api"
 
 volumes:
   portainer_data:

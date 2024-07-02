@@ -1,5 +1,5 @@
 ---
-# @file ubuntu-install-vscode-plugins.yml
+# @file ubuntu-vscode-plugins.yml
 # @brief Install VSCode plugins.
 #
 # @description The task installs VSCode plugins.
@@ -24,7 +24,7 @@
     for extension in "${extensions[@]}"
     do
       echo "[INFO] Install VSCode extension $extension"
-      code --install-extension "$extension"
+      code --extension "$extension"
     done
   args:
     executable: /bin/bash

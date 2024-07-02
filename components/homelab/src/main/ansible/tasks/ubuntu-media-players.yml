@@ -1,5 +1,5 @@
 ---
-# @file ubuntu-install-media-players.yml
+# @file ubuntu-media-players.yml
 # @brief Install some mediaplayers and codecs.
 #
 # @description The task installs some media players, codecs, cd rippers, etc.

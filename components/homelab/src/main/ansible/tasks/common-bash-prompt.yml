@@ -1,5 +1,5 @@
 ---
-# @file common-config-bash-prompt.yml
+# @file common-bash-prompt.yml
 # @brief Update Bash prompt.
 #
 # @description  The task updates the Bash prompt for the ``{{ ansible_user }}``

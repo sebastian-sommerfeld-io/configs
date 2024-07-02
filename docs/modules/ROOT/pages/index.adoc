@@ -13,7 +13,7 @@ image:{github-actions-url}/{job-generate-docs}/{badge}[Github Badge, link={githu
 image:{github-actions-url}/{job-build}/{badge}[Github Badge, link={github-actions-url}/{job-ci}]
 
 == About this project
-This project defines all my infrastructure following the infrastructure as code pattern. It is intended to work specifically on my machines. You might be able to adopt some stuff from this project, but using it "as is" most likly will result in failure.
+This project defines all my infrastructure following the infrastructure as code pattern. It is intended to work specifically on my machines. You might be able to adopt some stuff from this project, but using it "as is" most likely will result in failure.
 
 * Github Repository -> {url-project}
 * Where to file issues -> {url-project}/issues

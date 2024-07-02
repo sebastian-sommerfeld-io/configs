@@ -1,5 +1,5 @@
 ---
-# @file ubuntu-install-snap-packages.yml
+# @file ubuntu-snap-packages.yml
 # @brief Install some span packages.
 #
 # @description The task installs several snap packages (some of them in ``classic`` mode).

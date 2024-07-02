@@ -1,5 +1,5 @@
 ---
-# @file ubuntu-install-chrome.yml
+# @file ubuntu-chrome.yml
 # @brief Install Chrome and Chromium browsers.
 #
 # @description The task installs Chrome and Chromium browsers.
@@ -19,11 +19,18 @@
     dest: /tmp/chrome.deb
     status_code: [200, 301, 302, 304]
 
-- name: Install -> Chrome
-  ansible.builtin.apt:
-    deb: /tmp/chrome.deb
+# - name: Install -> Chrome
+#   ansible.builtin.apt:
+#     deb: /tmp/chrome.deb
 
-- name: Install -> Chrome cleanup
-  ansible.builtin.file:
-    path: /tmp/chrome.deb
+# - name: Install -> Chrome cleanup
+#   ansible.builtin.file:
+#     path: /tmp/chrome.deb
+#     state: absent
+
+- name: Uninstall -> Chrome package
+  ansible.builtin.apt:
+    pkg:
+      - google-chrome-stable
     state: absent
+    update_cache: true

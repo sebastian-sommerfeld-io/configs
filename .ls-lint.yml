@@ -41,13 +41,14 @@ ignore:
   - target
 
   # linter definitions
-  - .adoc-links.json
   - .ansible-lint.yml
-  - .gherkin-lintrc.json
   - .ls-lint.yml
   - .pre-commit-config.yaml
+  - .releaserc
   - .yamllint.yml
-  - resources/sync
 
   # misc
   - src/main/github/.terraform-docs.yml
+  - components/homelab/target
+  - components/homelab/src/main/docker-stacks/pihole/etc-pihole
+  - components/homelab/src/main/docker-stacks/pihole/etc-dnsmasq.d

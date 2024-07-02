@@ -1,5 +1,5 @@
 ---
-# @file common-config-ssh-keypair.yml
+# @file common-ssh-keypair.yml
 # @brief Create SSH keypair
 #
 # @description The task create a SSH keypair for the ``{{ ansible_user }}`` inside

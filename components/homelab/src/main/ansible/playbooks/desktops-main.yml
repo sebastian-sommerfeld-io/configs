@@ -28,7 +28,7 @@
 # The ``xref:AUTO-GENERATED:components/homelab/src/main/ansible-cli-sh.adoc[components/homelab/src/main/ansible-cli.sh]``
 # script, which takes care of running this playbook, expects Docker to be installed. A
 # local Ansible installation is not needed. When starting on a fresh system without any
-# additional packages installed, start with the ``* xref:AUTO-GENERATED:components/homelab/src/main/bootstrap/install-basics-sh.adoc[components/homelab/src/main/bootstrap/install-basics.sh]``
+# additional packages installed, start with the ``* xref:AUTO-GENERATED:components/homelab/src/main/bootstrap/basics-sh.adoc[components/homelab/src/main/bootstrap/basics.sh]``
 # script to make sure all requirements are met.
 
 - name: Setup for group ubuntu_desktop
@@ -39,27 +39,28 @@
     - ../vars/global.yml
   tasks:
 
-    - ansible.builtin.import_tasks: ../tasks/common-config-bash-prompt.yml
-    - ansible.builtin.import_tasks: ../tasks/common-config-bash-aliases.yml
-    - ansible.builtin.import_tasks: ../tasks/ubuntu-config-bash-aliases.yml
-    - ansible.builtin.import_tasks: ../tasks/common-config-create-directories.yml
-    - ansible.builtin.import_tasks: ../tasks/common-config-git.yml
-    - ansible.builtin.import_tasks: ../tasks/common-install-packages.yml
-    - ansible.builtin.import_tasks: ../tasks/ubuntu-install-packages.yml
-    - ansible.builtin.import_tasks: ../tasks/ubuntu-install-chrome.yml
-    - ansible.builtin.import_tasks: ../tasks/ubuntu-install-media-players.yml
+    - ansible.builtin.import_tasks: ../tasks/common-bash-prompt.yml
+    - ansible.builtin.import_tasks: ../tasks/common-bash-aliases.yml
+    - ansible.builtin.import_tasks: ../tasks/ubuntu-bash-aliases.yml
+    - ansible.builtin.import_tasks: ../tasks/common-create-directories.yml
+    - ansible.builtin.import_tasks: ../tasks/common-git.yml
+    - ansible.builtin.import_tasks: ../tasks/common-packages.yml
+    - ansible.builtin.import_tasks: ../tasks/ubuntu-packages.yml
+    - ansible.builtin.import_tasks: ../tasks/ubuntu-chrome.yml
+    - ansible.builtin.import_tasks: ../tasks/ubuntu-media-players.yml
     - ansible.builtin.import_tasks: ../tasks/ubuntu-uninstall.yml
-    - ansible.builtin.import_tasks: ../tasks/common-config-ssh-keypair.yml
-    - ansible.builtin.import_tasks: ../tasks/ubuntu-install-docker.yml
-    - ansible.builtin.import_tasks: ../tasks/ubuntu-install-ansible.yml
-    - ansible.builtin.import_tasks: ../tasks/ubuntu-install-sublime.yml
-    - ansible.builtin.import_tasks: ../tasks/ubuntu-install-snap-packages.yml
-    - ansible.builtin.import_tasks: ../tasks/ubuntu-install-github-cli.yml
-    - ansible.builtin.import_tasks: ../tasks/ubuntu-install-virtualization.yml
-    - ansible.builtin.import_tasks: ../tasks/ubuntu-install-docker-wrapper-scripts.yml
-    - ansible.builtin.import_tasks: ../tasks/common-install-scripts.yml
-    - ansible.builtin.import_tasks: ../tasks/common-uninstall-scripts.yml
-    - ansible.builtin.import_tasks: ../tasks/common-install-jarvis.yml
+    - ansible.builtin.import_tasks: ../tasks/common-ssh-keypair.yml
+    - ansible.builtin.import_tasks: ../tasks/ubuntu-ansible.yml
+    - ansible.builtin.import_tasks: ../tasks/ubuntu-sublime.yml
+    - ansible.builtin.import_tasks: ../tasks/ubuntu-snap-packages.yml
+    - ansible.builtin.import_tasks: ../tasks/ubuntu-github-cli.yml
+    - ansible.builtin.import_tasks: ../tasks/ubuntu-virtualization.yml
+    - ansible.builtin.import_tasks: ../tasks/ubuntu-docker.yml
+    - ansible.builtin.import_tasks: ../tasks/ubuntu-minikube.yml
+    - ansible.builtin.import_tasks: ../tasks/ubuntu-docker-wrapper-scripts.yml
+    - ansible.builtin.import_tasks: ../tasks/common-scripts.yml
+    - ansible.builtin.import_tasks: ../tasks/common-uninstall.yml
+    - ansible.builtin.import_tasks: ../tasks/common-jarvis.yml
 
 - name: Setup for group ubuntu_desktop (non-root)
   hosts: ubuntu_desktop
@@ -69,8 +70,8 @@
     - ../vars/global.yml
   tasks:
 
-    - ansible.builtin.import_tasks: ../tasks/common-config-cron-jobs.yml
-    - ansible.builtin.import_tasks: ../tasks/ubuntu-install-vscode-plugins.yml
+    - ansible.builtin.import_tasks: ../tasks/common-cron-jobs.yml
+    - ansible.builtin.import_tasks: ../tasks/ubuntu-vscode-plugins.yml
     - ansible.builtin.import_tasks: ../tasks/ubuntu-copy-files.yml
 
     #  +-----------------------------------------------------------------------------+

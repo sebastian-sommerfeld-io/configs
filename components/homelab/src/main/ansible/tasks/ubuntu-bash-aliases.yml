@@ -1,5 +1,5 @@
 ---
-# @file ubuntu-config-bash-aliases.yml
+# @file ubuntu-bash-aliases.yml
 # @brief Add aliases to the bash config
 #
 # @description The task adds aliases to the bash config.

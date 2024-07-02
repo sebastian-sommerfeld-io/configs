@@ -1,5 +1,5 @@
 ---
-# @file ubuntu-install-github-cli.yml
+# @file ubuntu-github-cli.yml
 # @brief Install the Github CLI.
 #
 # @description The task installs the Github CLI tool.

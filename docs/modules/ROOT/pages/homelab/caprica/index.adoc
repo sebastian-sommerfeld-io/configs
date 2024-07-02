@@ -15,7 +15,7 @@ Caprica is my primary workstation for all my development tasks and daily to-dos.
 .. Set dark mode, dock config, etc.
 .. Add `~/work`, `~/tmp` and `~/virtualmachines` to favorites (in File Manager)
 .. Update file associations in "Settings > Applications > Sublime Text"
-. Run basic setup tasks using `curl https://raw.githubusercontent.com/sebastian-sommerfeld-io/configs/main/components/homelab/src/main/bootstrap/install-basics.sh | bash -`
+. Run basic setup tasks using `curl https://raw.githubusercontent.com/sebastian-sommerfeld-io/configs/main/components/homelab/src/main/bootstrap/basics.sh | bash -`
 . Test connecting to my other Linux machines (with user "sebastian" being the user created while installing the OS).
 .. `caprica` via `ssh sebastian@caprica.fritz.box`
 .. `kobol` via `ssh sebastian@kobol.fritz.box`

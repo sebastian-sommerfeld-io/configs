@@ -1,0 +1,32 @@
+= Minikube vs Portainer
+
+----
+status: accepted
+date: 2024-02-07
+----
+
+== Context and Problem Statement
+In our current setup, Portainer is deployed across all local machines to facilitate the inspection and management of Docker containers and images. This setup allows for efficient monitoring and cleanup of old images, volumes, and other Docker resources, streamlining our container management process. This part is not the issue because it works as expected.
+
+However, we encounter challenges with Portainer's GitOps feature, which is intended to automate the deployment and updating of Docker images.
+
+The primary issue lies in the apparent instability of the GitOps feature; we frequently experience situations where Docker Compose stacks are not initiated as expected or missing altogether. This inconsistency leads to missing services and disrupts our deployment flow, affecting the reliability of our containerized applications. Our portainer setup includes a custom setup involving a Newman side container. This container is crucial for initializing all stacks that Portainer is supposed to manage, executing through a REST API to ensure that our applications are correctly set up and configured. This bespoke solution adds another layer of complexity to our deployment process, further complicating the use of Portainer's GitOps feature. The Newman approach is specific to us and not a standardized solution.
+
+Given these challenges, we are at a crossroads in deciding how to proceed with our container management strategy. The instability of the GitOps feature and the intricacies of our custom setup necessitate a reevaluation of our tooling.
+
+== Considered Options
+* **Maintaining and Enhancing the Current Portainer Setup**: This option involves sticking with our existing Portainer infrastructure but taking steps to enhance its stability and reliability. The focus would be on addressing the issues with the GitOps feature and integrating our custom Newman side container setup more seamlessly.
+
+* **Transitioning to a Minikube-Based Container Management Approach**: Under this option, we would shift our container management and deployment processes to a local Minikube instance. This would reposition Portainer to serve primarily for operational and inspection tasks. The transition to Minikube would leverage the Kubernetes ecosystem for container orchestration, aiming to standardize our deployment processes and improve scalability.
+
+== Decision Outcome
+We chose to transition to a Minikube-based approach, because of the following reasons:
+
+* **Standardization**: Leveraging Kubernetes through Minikube can lead to more standardized deployment processes.
+* **Development and Testing**: Minikube is ideal for local development and testing, allowing developers to test their applications in a Kubernetes environment that somewhat mirrors production.
+* **Community and Support**: Kubernetes, and by extension Minikube, has a large community and extensive documentation, providing robust support for troubleshooting and learning.
+* **Learning Opportunities**: Transitioning to Minikube offers an opportunity to learn more about Kubernetes and container orchestration, enhancing our skill set and knowledge.
+
+However, we need to keep the disadvantages of using Minikube in mind:
+
+* **Resource Intensive**: Running a local Kubernetes cluster with Minikube can be more resource-intensive than managing Docker containers directly, potentially impacting the performance of local machines.

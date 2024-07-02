@@ -1,5 +1,5 @@
 ---
-# @file common-config-bash-aliases.yml
+# @file common-bash-aliases.yml
 # @brief Update Bash settings.
 #
 # @description The task updates the Bash settings for the ``{{ ansible_user }}``

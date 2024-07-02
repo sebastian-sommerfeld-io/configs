@@ -1,5 +1,5 @@
 ---
-# @file common-install-packages.yml
+# @file common-packages.yml
 # @brief Install basic packages.
 #
 # @description The task installs basic packages that act as dependencies for other

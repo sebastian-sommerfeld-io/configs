@@ -1,7 +1,7 @@
 ---
 name: configs
 title: Configuration Docs
-version: main
+version: minikube-setup
 start_page: ROOT:index.adoc
 nav:
   - modules/ROOT/nav.adoc

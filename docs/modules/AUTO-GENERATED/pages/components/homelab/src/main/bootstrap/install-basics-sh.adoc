@@ -1,4 +1,4 @@
-= install-basics.sh
+= basics.sh
 
 Run basic provisioning.
 
@@ -15,5 +15,5 @@ The script does not accept any parameters.
 [source, bash]
 
 ----
-curl https://raw.githubusercontent.com/sebastian-sommerfeld-io/configs/main/components/homelab/src/main/bootstrap/install-basics.sh | bash -
+curl https://raw.githubusercontent.com/sebastian-sommerfeld-io/configs/main/components/homelab/src/main/bootstrap/basics.sh | bash -
 ----

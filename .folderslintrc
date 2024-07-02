@@ -2,6 +2,8 @@
   "rules": [
     ".github/workflows",
 
+    ".vscode",
+
     "docs/modules/*/assets/attachments/**",
     "docs/modules/*/assets/images/**",
     "docs/modules/*/examples/*",
@@ -11,8 +13,11 @@
     "docs/modules/*/partials/*",
     "docs/modules/*/partials/**",
 
-    "src/main/**",
-    "src/test/**",
+    "components",
+    "components/homelab",
+    "components/homelab/src/main/**",
+    "components/homelab/src/test/**",
+    "components/homelab/target/**",
 
     "node_modules/**",
     "target/**"

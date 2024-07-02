@@ -1,5 +1,5 @@
 ---
-# @file ubuntu-install-packages.yml
+# @file ubuntu-packages.yml
 # @brief Install some basic packages with a UI
 #
 # @description The task installs some basic packages with a UI.
